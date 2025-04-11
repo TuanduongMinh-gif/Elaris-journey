@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ngày 1 – Gió Ngủ Trong Lá (Fantasy Night)</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap');
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cardo', serif;
+      overflow-x: hidden;
+      background: #0b0f1a;
+      color: #e0e0e0;
+    }
+    body {
+      background: linear-gradient(to bottom, #0b0f1a 0%, #1a233a 100%);
+      height: 100vh;
+    }
+    .overlay {
+      position: relative;
+      background: rgba(10, 10, 10, 0.6);
+      padding: 3rem;
+      margin: 5% auto;
+      max-width: 800px;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+      text-align: center;
+      z-index: 2;
+    }
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 1rem;
+      color: #c5efff;
+      text-shadow: 0 0 15px rgba(173, 216, 230, 0.4);
+    }
+    .quote {
+      font-style: italic;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border-left: 4px solid #4fc3f7;
+      background: rgba(255,255,255,0.03);
+    }
+    .reminder {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+    .note {
+      margin-top: 2rem;
+      text-align: left;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      resize: vertical;
+      font-family: 'Cardo', serif;
+      background: rgba(255, 255, 255, 0.1);
+      color: #e0f7fa;
+    }
+    audio {
+      margin-top: 2rem;
+    }
+    #moon {
+      position: fixed;
+      top: 50px;
+      right: 60px;
+      width: 80px;
+      animation: spin 60s linear infinite;
+      z-index: 1;
+    }
+    #dragon {
+      position: fixed;
+      top: 100px;
+      left: -200px;
+      width: 120px;
+      animation: fly 30s linear infinite;
+      z-index: 1;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes fly {
+      0% { left: -200px; transform: scaleX(1); }
+      50% { left: 110%; transform: scaleX(1); }
+      50.01% { transform: scaleX(-1); }
+      100% { left: -200px; transform: scaleX(-1); }
+    }
+  </style>
+</head>
+<body>
+  <img id="moon" src="https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg" alt="Moon">
+  <img id="dragon" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Dragon_icon_transparent.png" alt="Dragon">
+  <div class="overlay">
+    <h1>Ngày 1 – Gió Ngủ Trong Lá (Đêm) 🌘</h1>
+    <div class="quote">
+      – Ngay cả trong bóng tối, gió vẫn biết đường mà đi.<br/>
+      Sáng tạo âm thanh không cần ánh sáng, chỉ cần trái tim lặng.
+    </div>
+    <div class="reminder">
+      🔹 Krûn nhắc nhở:<br> Giữ sự tĩnh lặng như cánh rừng ngủ. Mỗi âm thanh bạn nghe đều đáng để ghi nhớ.
+    </div>
+    <div class="note">
+      <p><strong>Ghi chú của bạn:</strong></p>
+      <textarea placeholder="Viết điều bạn cảm nhận về hôm nay..."></textarea>
+    </div>
+    <audio controls autoplay loop>
+      <source src="https://cdn.pixabay.com/download/audio/2022/03/28/audio_9a8b92e4de.mp3?filename=celestial-background-music-117984.mp3" type="audio/mp3">
+      Trình duyệt của bạn không hỗ trợ phát nhạc.
+    </audio>
+  </div>
+</body>
+</html>
