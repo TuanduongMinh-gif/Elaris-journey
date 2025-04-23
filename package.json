@@ -1,0 +1,27 @@
+{
+  "name": "les-mondes-de-tuan",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "framer-motion": "^7.6.11",
+    "howler": "^2.2.3",
+    "zustand": "^4.3.6",
+    "react-i18next": "^12.2.0",
+    "i18next": "^23.2.1",
+    "react-router-dom": "^6.11.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.2",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "vite": "^4.3.9",
+    "@vitejs/plugin-react": "^4.0.0"
+  }
+}
